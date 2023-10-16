@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <form class="form-container" onsubmit="SubmitADD()">
+            <h2>Smartphone Information</h2>
+            <input type="text" id="brand_input" placeholder="Enter smartphone brand..." />
+            <input type="number" id="storage_input" placeholder="Enter smartphone storage..." />
+            <input type="text" id="price_input" placeholder="Enter smartphone price..." />
+            <input type="number" id="RAM_input" placeholder="Enter smartphone RAM... " />
+            <select id="OS_input">
+          <option hidden>Select OS</option>
+          <option value="IOS">IOS</option>
+          <option value="IOS">Android</option>
+        </select>
+            <select name="" id="color_input">
+          <option hidden>Select color</option>
+          <option value="Black">Black</option>
+          <option value="Gray">Gray</option>
+          <option value="DarkRed">Dark Red</option>
+          <option value="White">White</option>
+          <option value="DarkBlue">Dark Blue</option>
+        </select>
+            <input type="submit" value="ADD" class="submit-btn" />
+        </form>
+
+        <div class="info-container">
+            <h2>Smartphone Information</h2>
+            <p id="brand_p">Brand:</p>
+            <p id="storage_p">Storage:</p>
+            <p id="RAM_p">RAM:</p>
+            <p id="OS_p">Operating System:</p>
+            <p id="color_p">Color:</p>
+            <p id="price_p">Price:</p>
+
+            <button id="delete_btn">DELETE</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
